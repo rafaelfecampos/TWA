@@ -29,5 +29,42 @@ let mariana = {
 paragrafo.innerText = mariana.conta();
 console.log(paragrafo);*/
 
-let paragrafo = document.getElementsByTagName('p');
-console.log(paragrafo);
+// let paragrafo = document.getElementsByTagName('p');
+// console.log(paragrafo);
+
+
+
+
+
+let elefante = {
+    quantidade : 10,
+    conta(){
+        let musica = "1 elefante incomoda muita gente\n";
+        let incomodam = [`incomodam `];
+        for (let i = 2; i <= this.quantidade; i++){
+            incomodam.push(`incomodam `);
+
+            if ( i % 2 == 1 ){
+                musica += `${i} elefantes incomodam muita gente\n`;           
+            }else{
+                musica += `${i} elefantes ${incomodam} muito mais! \n`;
+            }
+        }
+
+        musica +=`\n`;
+
+        for (let i = this.quantidade; i >= 2; i--){
+            if ( i % 2 == 0 ){
+                musica += `${i} elefantes incomodam muita gente\n`;           
+            }else{
+                musica += `${i} elefantes ${incomodam} muito menos! \n`;
+            }
+            incomodam.pop();
+        }
+
+        musica += "1 elefante incomoda muito menos\n";
+        console.log(musica);
+    }
+};
+
+elefante.conta();
