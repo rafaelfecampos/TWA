@@ -28,16 +28,18 @@ function modoEscuro() {
 
 function alterarModo() {
     const textosAzul = document.querySelectorAll(".texto-azul");
-    const textosVermelho = document.querySelectorAll('.texto-vermelho')
+
     if (textosAzul.length > 0) {
         textosAzul.forEach(texto => {
             texto.classList.replace('texto-azul', 'texto-vermelho')
         });
-    }
-    if (textosVermelho.length > 0) {
-        textosVermelho.forEach(texto => {
-            texto.classList.replace('texto-vermelho', 'texto-azul')
-        });
+    } else {
+        const textosVermelho = document.querySelectorAll('.texto-vermelho')
+        if (textosVermelho.length > 0) {
+            textosVermelho.forEach(texto => {
+                texto.classList.replace('texto-vermelho', 'texto-azul')
+            });
+        }
     }
 
 
