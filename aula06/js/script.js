@@ -1,4 +1,4 @@
-//##DOCUMENTE OBJECT MODEL (DOM)##
+//##DOCUMENT OBJECT MODEL (DOM)##
 
 /*console.log(window);
 

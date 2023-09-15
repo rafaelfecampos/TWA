@@ -112,7 +112,7 @@ console.log(typeof nome);*/
 
 //-----------------------
 
-//Representação numeria
+//Representação numerica
 /*var numero = 2.13e2; //exponecial 2,13*10^2
 var numero2 = 2.12e-3; //exponencial 2,12*10^-3
 console.log("n1: ", numero);
