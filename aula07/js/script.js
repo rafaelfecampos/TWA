@@ -44,5 +44,18 @@ function alterarModo() {
 
 
 
-    corpo.classList.toggle('escuro'); //toggle simplifica a função acima, se tiver a classe x, remove x; se nao tiver a classe x, adiciona x
+    //corpo.classList.toggle('escuro'); //toggle simplifica a função acima, se tiver a classe x, remove x; se nao tiver a classe x, adiciona x
+    
 }
+
+// 19/09
+
+// const link = document.getElementById('LinkGoogle');
+// console.log(link.getAttribute('src'));
+// console.log(link.attributes);
+
+const link = document.getElementById('LinkGoogle');
+link.setAttribute('nomeAtributo', 'novoAtributo');
+array.forEach(element => {
+    
+});
